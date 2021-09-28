@@ -1,5 +1,5 @@
 import React from "react";
-import './LoginForm.css'
+import styles from './LoginForm.module.css'
 
 export default class LoginForm extends React.Component{
     constructor(props){
@@ -9,13 +9,13 @@ export default class LoginForm extends React.Component{
 
     render(){
         return <div>
-            <form className="form">
-                <label className="label" htmlFor="username">Name</label>
-                <input className="input" name="username" />
+            <form className={styles.form}>
+                <label className={styles.label} htmlFor="username">Name</label>
+                <input className={styles.input} name="username" />
 
-                <label className="label" for="password">Password</label>
-                <input className="input" name="password" />
-                <button className="submit" type="submit">Submit</button>
+                <label className={styles.label} for="password">Password</label>
+                <input className={styles.input} name="password" />
+                <button className={styles.submit} type="submit">Submit</button>
             </form>
         </div>
     }
